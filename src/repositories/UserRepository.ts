@@ -42,3 +42,5 @@ export class UserRepository {
     })
   }
 }
+
+export const UserRepositorySingleton = new UserRepository()

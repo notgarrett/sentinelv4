@@ -3,7 +3,7 @@ import { BanInterface } from '../typings'
 import { Ban } from '../models/BanModel'
 
 @injectable()
-export class BanService {
+export class RoleConfigRepository {
   private readonly database
   public constructor () {
     this.database = Ban

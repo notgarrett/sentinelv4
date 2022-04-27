@@ -1,9 +1,9 @@
 import 'reflect-metadata'
-import { UserRepository } from '../../services/UserRepository'
+import { UserRepositorySingleton } from '../../repositories/UserRepository'
 
 describe('User Tests', () => {
   it('Checking for User', async (done) => {
-    const n = new UserRepository()
+    const n = UserRepositorySingleton
     const x = await n.getUsers({})
     console.log(x)
   })

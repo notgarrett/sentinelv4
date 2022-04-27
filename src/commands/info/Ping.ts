@@ -1,6 +1,6 @@
 import { Command } from '../../structures'
 import { Constants } from 'discord.js'
-import { UserRepository } from '../../services/UserRepository'
+import { UserRepository } from '../../repositories/UserRepository'
 
 export default new Command({
   name: 'ping',
